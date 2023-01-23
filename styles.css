@@ -41,54 +41,54 @@
   }
   p a {
     display: inline;
-  }
-  
-  li {
+}
+
+li {
     list-style-type: none;
-  }
-  
-  html {
+}
+
+html {
     scroll-behavior: smooth;
-  }
-  
-  h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
     font-size: inherit;
     font-weight: inherit;
     font-style: inherit;
     text-decoration: none;
     color:inherit;
-  }
-  blockquote:before, blockquote:after, q:before, q:after {
-      content: '';
-      content: none;
-  }
-  
-  ::selection {
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+::selection {
     background-color: var(--negro);
     color: var(--blanco);
-  }
-  
-  form , input, textarea, select , button , label{
-      font-family: inherit;
-      font-size: inherit;
-      hyphens: auto;
-      background-color: transparent;
-      color:inherit;
-      display: block;
-  }
-  
-  table , tr , td {
+ }
+
+form , input, textarea, select , button , label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color:inherit;
+    display: block;
+}
+
+table , tr , td {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  
-  svg{
-      width: 100%;
-      display: block;
-      fill: currentColor;
-  }
-  
-  body {
+}
+
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+body {
     min-height  : 100vh;
     font-size   : 100%;
     font-family : 'Roboto', sans-serif;
@@ -201,6 +201,9 @@
     text-align: center;
 }
 
+
+
+
 @media (max-width: 768px){
     .ido-content{
         max-width: 100%;
@@ -225,7 +228,6 @@
 }
 .Me-content{
     width: 5em;
-    margin: 0 0 0 1em;
     border: 2px solid #fff;
     border-radius: 50%;
     box-shadow: 0px 0px 10px #000;
@@ -258,7 +260,7 @@
 }
 
 .Love{
-    margin: 1em 0 0 0;
+    margin: 2em 0 0 0;
 }
 .Love-title{
     max-width: max-content;
@@ -284,7 +286,7 @@
 }
 
 .Languages{
-    margin: 1em 0 0 0;
+    margin: 2em 0 0 0;
     text-decoration: underline 4px #ff63c3;
     text-underline-offset: .3em;
 }
@@ -301,13 +303,20 @@
     max-width: 1.5em;
 }
 
+.Projects{
+    margin: 2em 0 0 0;
+    width: 100%;
+}
+
 
 
 .Project{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    gap: .5em;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+    
 }
 
 @media screen and (max-width: 768px){
@@ -347,8 +356,7 @@
 }
 
 .Project-card{
-    max-width: 14.75em;
-    background-color: blue;
+    max-width: 13.75em;
     position: relative;
     max-height: 7em;
     display: flex;
@@ -371,17 +379,17 @@
 .Project-link-title:hover{
     backdrop-filter: blur(.20em);
     opacity: 1;
-    transition: all .6s;
+    transition: all .4s;
 }
 
 .Project-link-img{
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
+    border-radius: var(--border-radius);
 }
 
 .Project-title{
-    margin: 1em 0 1em 0;
     text-decoration: underline 4px #ff63c3;
     text-underline-offset: .3em;
 }
